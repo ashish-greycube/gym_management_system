@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:plan_name",
+ "creation": "2022-10-15 11:03:31.258419",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "exercise",
+  "route",
+  "published",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "exercise",
+   "fieldtype": "Table",
+   "options": "Gym Workout Plan Exercise"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plane Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check"
+  },
+  {
+   "description": "Yearly Price",
+   "fieldname": "rate",
+   "fieldtype": "Currency"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-10-22 15:29:42.197549",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Workout Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "plan",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

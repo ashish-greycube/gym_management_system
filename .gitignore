@@ -4,3 +4,4 @@
 *.swp
 tags
 gym_management_system/docs/current
+node_modules

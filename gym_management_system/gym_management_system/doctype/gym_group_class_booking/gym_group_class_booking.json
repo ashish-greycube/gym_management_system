@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{group__class}-{member}-{DD}-{MM}",
+ "creation": "2022-10-17 12:41:55.035567",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_date",
+  "member",
+  "group__class"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "class_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Class Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group__class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Group  Class",
+   "options": "Gym Group Class",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Gym Member",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-28 16:15:28.070959",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Group Class Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
