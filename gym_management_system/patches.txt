@@ -1,0 +1,2 @@
+[post_model_sync]
+gym_management_system.patch.add_default_phone_no_for_trainer

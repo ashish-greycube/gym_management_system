@@ -46,8 +46,9 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-10-28 15:48:32.756828",
+ "modified": "2022-11-03 12:22:10.562148",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Membership",

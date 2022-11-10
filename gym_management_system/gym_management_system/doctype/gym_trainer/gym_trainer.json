@@ -7,7 +7,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "trainer_name"
+  "trainer_name",
+  "trainer_contact"
  ],
  "fields": [
   {
@@ -15,11 +16,17 @@
    "fieldtype": "Data",
    "label": "Trainer Name",
    "unique": 1
+  },
+  {
+   "fieldname": "trainer_contact",
+   "fieldtype": "Data",
+   "label": "Trainer Contact",
+   "options": "Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-17 10:45:25.553711",
+ "modified": "2022-11-03 09:37:20.219047",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Trainer",

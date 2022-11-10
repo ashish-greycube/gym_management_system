@@ -3,6 +3,7 @@
     "@4tw/cypress-drag-drop": "^2",
     "@testing-library/cypress": "^8",
     "cypress": "^6",
-    "cypress-file-upload": "^5"
+    "cypress-file-upload": "^5",
+    "js-confetti": "^0.11.0"
   }
 }
