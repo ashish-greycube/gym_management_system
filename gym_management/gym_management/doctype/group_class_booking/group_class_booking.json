@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "classbooking.####",
+ "creation": "2023-07-03 12:54:09.564478",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "group_class_name",
+  "joining_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Link",
+   "label": "Member Name",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "group_class_name",
+   "fieldtype": "Link",
+   "label": "Group Class Name",
+   "options": "Gym Group Classes"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-03 12:54:30.443649",
+ "modified_by": "Administrator",
+ "module": "gym_management",
+ "name": "Group class booking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
