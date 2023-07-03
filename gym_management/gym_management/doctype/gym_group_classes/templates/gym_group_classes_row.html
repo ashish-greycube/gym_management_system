@@ -1,0 +1,23 @@
+{% set gym_group_class = frappe.db.get_value("Gym Group Classes",doc.name,"class_name") %}
+<div class="card h-100 w-300 justify-content-between my-2">
+	<div class="card-body">
+	  <h5 class="card-title"><b>{{ gym_group_class }}</b></h5>
+	  <!-- <img src="{{doc.image}}"><br> -->
+	  <p class="card-subtitle mb-2 text-muted"><br>
+		Trainer: {{doc.instructor}}<br>
+		Timing: {{doc.time}}<br>
+		Speciality of class: {{doc.speciality_of_class}}<br>
+	  </p>
+	  <p class="card-text" style="color: blue;">
+		Cost:  {{ doc.price }}
+	  </p>
+</div>
+
+{% if doc.route and doc.is_published %}
+  <div class="card-body flex-grow-0">
+    <a href="/{{doc.route}}" class="card-link">{{ _('View Details') }}</a>
+  </div>
+{% endif %} 
+
+
+

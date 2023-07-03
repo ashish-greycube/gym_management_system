@@ -1,0 +1,21 @@
+{% extends "templates/web.html" %} {% block page_content %}
+<h5>{{ title }}</h5>
+<div>
+  <h3>Group Class Details</h3>
+  {% set group_class = frappe.db.get_value("Gym Group Classes",doc.name,"class_name") %}
+  <ul>
+    <li>Group Class: {{ group_class }}</li>
+   
+  </ul>
+  <div>
+    <a
+      href="/group-class-booking-form/new?class={{ group_class }}"
+      class="btn btn-primary mt-3"
+    >
+      Book Class
+    </a>
+  </div>
+</div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->
