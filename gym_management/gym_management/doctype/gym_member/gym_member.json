@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-06-23 14:12:05.430598",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "email",
+  "date_of_birth",
+  "column_break_woqh7",
+  "phone_no",
+  "gender",
+  "joining_date",
+  "joined_any_group_class",
+  "section_break_m3lb0",
+  "vitals",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_woqh7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone no",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_break_m3lb0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vitals",
+   "fieldtype": "Table",
+   "label": "Vitals",
+   "options": "Gym Member Vital and Body Measurements"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "joined_any_group_class",
+   "fieldtype": "Link",
+   "label": "Joined any group class",
+   "options": "Gym Group Classes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Gym Membership",
+   "link_fieldname": "member"
+  },
+  {
+   "link_doctype": "Gym Workout Plan",
+   "link_fieldname": "member"
+  },
+  {
+   "link_doctype": "Assigned Diet Plan",
+   "link_fieldname": "assigned_to_member"
+  },
+  {
+   "link_doctype": "Gym Group Classes",
+   "link_fieldname": "member"
+  }
+ ],
+ "modified": "2023-07-01 17:59:39.909334",
+ "modified_by": "Administrator",
+ "module": "gym_management",
+ "name": "Gym Member",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

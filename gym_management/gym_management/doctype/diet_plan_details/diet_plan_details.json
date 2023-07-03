@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-01 12:40:24.296646",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diet_meals",
+  "protein",
+  "carbs",
+  "fat",
+  "calories",
+  "qty",
+  "meal_schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "diet_meals",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diet Meals"
+  },
+  {
+   "fieldname": "protein",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Protein"
+  },
+  {
+   "fieldname": "carbs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Carbs"
+  },
+  {
+   "fieldname": "fat",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fat"
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Calories"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "meal_schedule",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meal Schedule"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-01 12:41:26.924328",
+ "modified_by": "Administrator",
+ "module": "gym_management",
+ "name": "Diet Plan Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -24,6 +24,9 @@ app_license = "MIT"
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
+extend_website_page_controller_context = {
+    "frappe.www.404": "gym_management.my_custom_404.context_404"
+}
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}

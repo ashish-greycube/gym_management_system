@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MEM.####",
+ "creation": "2023-06-23 16:20:28.216261",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "member_name",
+  "column_break_17dtw",
+  "trainer",
+  "start_date",
+  "end_date",
+  "column_break_1uam2",
+  "plan",
+  "time_slot",
+  "valid_number_of_days",
+  "fees_paid",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plan",
+   "options": "Gym Workout Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_17dtw",
+   "fieldtype": "Section Break",
+   "label": "Gym Membership Details"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Membership",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "column_break_1uam2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_slot",
+   "fieldtype": "Duration",
+   "label": "Time Slot"
+  },
+  {
+   "fieldname": "valid_number_of_days",
+   "fieldtype": "Int",
+   "label": "Valid number of days"
+  },
+  {
+   "fieldname": "fees_paid",
+   "fieldtype": "Currency",
+   "label": "Monthly Fees"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-01 16:38:01.979608",
+ "modified_by": "Administrator",
+ "module": "gym_management",
+ "name": "Gym Membership",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

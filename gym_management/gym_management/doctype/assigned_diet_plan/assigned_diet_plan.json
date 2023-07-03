@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DP.####",
+ "creation": "2023-07-01 12:37:41.935888",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diet_goal",
+  "assigned_to_member",
+  "member_name",
+  "trainer",
+  "column_break_udqr4",
+  "status",
+  "start_date",
+  "end_date",
+  "section_break_jpmsp",
+  "diet_plan"
+ ],
+ "fields": [
+  {
+   "fieldname": "diet_goal",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diet Goal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assigned to member",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "assigned_to_member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Gym Trainer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_udqr4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "section_break_jpmsp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "diet_plan",
+   "fieldtype": "Table",
+   "label": "Diet",
+   "options": "Diet Plan Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-01 12:44:46.592952",
+ "modified_by": "Administrator",
+ "module": "gym_management",
+ "name": "Assigned Diet Plan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
